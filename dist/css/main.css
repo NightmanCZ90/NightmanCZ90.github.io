@@ -59,6 +59,21 @@ input[class^='btn-']:hover {
 .my-4 {
   margin: 4rem 0; }
 
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase; }
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: #AFE6AF;
+  display: block;
+  margin: 0 auto 1rem auto; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -142,8 +157,12 @@ img {
       font-size: 1.2rem; }
       #home-b .stack li.stats-title {
         font-size: 2rem; }
-    #home-b .stack div {
+    #home-b .stack > div {
       padding: 3rem 0; }
-      #home-b .stack div:nth-child(odd) {
+      #home-b .stack > div:nth-child(odd) {
         background: #AFE6AF;
         color: #0D2D32; }
+        #home-b .stack > div:nth-child(odd) .bottom-line {
+          background: #0D2D32; }
+      #home-b .stack > div .bottom-line {
+        margin-top: 0.5rem; }

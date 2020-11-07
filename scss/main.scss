@@ -135,12 +135,20 @@ img {
         }
       }
 
-      div {
+      > div {
         padding: 3rem 0;
 
         &:nth-child(odd) {
           background: $light-color;
           color: $main-color;
+
+          .bottom-line {
+            background: $main-color;
+          }
+        }
+
+        .bottom-line {
+          margin-top: 0.5rem;
         }
       }
     }
