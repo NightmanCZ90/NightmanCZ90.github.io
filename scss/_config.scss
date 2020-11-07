@@ -8,3 +8,12 @@ $other-color: #bdcba7;
 $medium-color: #ccc;
 $dark-color: #333;
 $bg-image: url('../img/na_poli.jpg');
+
+// Set Text Color
+@function set-text-color($color) {
+  @if(lightness($color) > 50) {
+    @return $light-color;
+  } @else {
+    @return $light-color;
+  }
+}

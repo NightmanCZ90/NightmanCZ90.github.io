@@ -91,9 +91,9 @@ img {
   }
 
   // Header Inner
-  &-inner {
+  // &-inner {
 
-  }
+  // }
 }
 
 // Home Sections
@@ -152,5 +152,65 @@ img {
         }
       }
     }
+  }
+
+  &-c {
+    margin-top: 3rem;
+    display: flex;
+
+    .social-list {
+      display: flex;
+    }
+
+    li {
+      list-style: none;
+      margin: 2rem;
+      text-align: center;
+      width: 10rem;
+      
+      p {
+        margin-top: 0.5rem;
+        font-size: 1.5rem;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-1.5rem);
+        transition: all 0.2s ease-in-out;
+      }
+
+      a {
+        color: $main-color;
+        transition: all 0.2s ease-in-out;
+
+        i {
+          font-size: 4rem;
+          margin-bottom: 1rem;
+        }
+
+        &:hover {
+          color: $light-color;
+
+          & ~ p {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      }
+
+    }
+  }
+}
+
+// Footer
+#main-footer {
+  background: $main-color;
+  color: $light-color;
+  height: 5rem;
+
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

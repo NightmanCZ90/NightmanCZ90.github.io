@@ -38,6 +38,7 @@ button[class^='btn-']:hover,
 a[class^='btn-']:hover,
 input[class^='btn-']:hover {
   background: $main-color;
+  color: set-text-color($main-color);
 }
 
 .lead {
