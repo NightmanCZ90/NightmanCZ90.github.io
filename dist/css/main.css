@@ -29,6 +29,22 @@ input[class^='btn-']:hover {
   background: #0D2D32;
   color: #AFE6AF; }
 
+.bg-main {
+  background: #0D2D32;
+  color: #AFE6AF; }
+
+.bg-dark {
+  background: #333;
+  color: #AFE6AF; }
+
+.bg-light {
+  background: #AFE6AF;
+  color: #0D2D32; }
+
+.bg-medium {
+  background: #ccc;
+  color: #0D2D32; }
+
 .lead {
   font-size: 1.3rem;
   margin-bottom: 2rem; }
@@ -105,7 +121,7 @@ img {
 #main-nav {
   display: flex;
   justify-content: space-between;
-  padding-top: 1rem; }
+  padding-top: 0.5rem; }
   #main-nav ul {
     display: flex; }
   #main-nav li {
@@ -133,6 +149,11 @@ img {
       color: #bdcba7;
       font-size: 4rem;
       line-height: 1.2; }
+
+#header-inner {
+  background: url("../img/na_poli.jpg") no-repeat center 5%/cover;
+  height: 5.5rem;
+  border-bottom: 3px solid #AFE6AF; }
 
 #home-a {
   background: #f4f4f4;
@@ -197,6 +218,75 @@ img {
           visibility: visible;
           opacity: 1;
           transform: translateY(0); }
+
+#about-a .about-info {
+  display: flex;
+  justify-content: space-between; }
+  #about-a .about-info .bio-image {
+    margin-right: 1.2rem; }
+  #about-a .about-info .bio {
+    border-left: 3px solid #0D2D32; }
+
+#about-b li {
+  background: #0D2D32;
+  list-style: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  /* Right Side */
+  /* Left Side */
+  /* Dots */
+  /* Right Side Arrow */
+  /* Left Side Arrow */
+  /* Show Boxes */ }
+  #about-b li div {
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 1rem;
+    transition: all 0.5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    /* Arrow Base */ }
+    #about-b li div:before {
+      content: '';
+      position: absolute;
+      bottom: 5px;
+      width: 0;
+      height: 0;
+      border-style: solid; }
+  #about-b li:nth-child(odd) div {
+    left: 40px;
+    transform: translateX(200px); }
+  #about-b li:nth-child(even) div {
+    left: -464px;
+    transform: translateX(-200px); }
+  #about-b li:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+    background: inherit;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    transition: background 0.5s ease-in-out; }
+  #about-b li:nth-child(odd) div:before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #0D2D32 transparent transparent; }
+  #about-b li:nth-child(even) div:before {
+    right: -15px;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent #0D2D32; }
+  #about-b li.show div {
+    visibility: visible;
+    opacity: 1;
+    transform: none; }
+  #about-b li.show:after {
+    background: #bdcba7; }
 
 #main-footer {
   background: #0D2D32;

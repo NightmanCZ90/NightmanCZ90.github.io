@@ -41,7 +41,7 @@ img {
 #main-nav {
   display: flex;
   justify-content: space-between;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
 
   ul {
     display: flex;
@@ -91,9 +91,11 @@ img {
   }
 
   // Header Inner
-  // &-inner {
-
-  // }
+  &-inner {
+    background: $bg-image no-repeat center 5% / cover;
+    height: 5.5rem;
+    border-bottom: 3px solid $light-color;
+  }
 }
 
 // Home Sections
@@ -197,6 +199,108 @@ img {
         }
       }
 
+    }
+  }
+}
+
+// About Sections
+#about {
+  &-a {
+    .about-info {
+      display: flex;
+      justify-content: space-between;
+
+      .bio-image {
+        margin-right: 1.2rem;
+      }
+
+      .bio {
+        border-left: 3px solid $main-color;
+      }
+    }
+  }
+
+  &-b {
+    // Create Line
+    li {
+      background: $main-color;
+      list-style: none;
+      position: relative;
+      width: 6px;
+      margin: 0 auto;
+      padding-top: 2rem;
+
+      // Boxes
+      div {
+        position: relative;
+        bottom: 0;
+        width: 400px;
+        padding: 1rem;
+        transition: all 0.5s ease-in-out;
+        visibility: hidden;
+        opacity: 0;
+
+        /* Arrow Base */
+        &:before {
+          content: '';
+          position: absolute;
+          bottom: 5px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+        }
+      }
+
+      /* Right Side */
+      &:nth-child(odd) div {
+        left: 40px;
+        transform: translateX(200px);
+      }
+
+      /* Left Side */
+      &:nth-child(even) div {
+        left: -464px;
+        transform: translateX(-200px);
+      }
+
+      /* Dots */
+      &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 25px;
+        height: 25px;
+        background: inherit;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        transition: background 0.5s ease-in-out;
+      }
+
+      /* Right Side Arrow */
+      &:nth-child(odd) div:before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent $main-color transparent transparent;
+      }
+
+      /* Left Side Arrow */
+      &:nth-child(even) div:before {
+        right: -15px;
+        border-width: 8px 0 8px 16px;
+        border-color: transparent transparent transparent $main-color;
+      }
+
+      /* Show Boxes */
+      &.show div {
+        visibility: visible;
+        opacity: 1;
+        transform: none;
+      }
+
+      &.show:after {
+        background: $other-color;
+      }
     }
   }
 }

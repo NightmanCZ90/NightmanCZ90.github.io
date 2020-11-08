@@ -12,7 +12,7 @@ $bg-image: url('../img/na_poli.jpg');
 // Set Text Color
 @function set-text-color($color) {
   @if(lightness($color) > 50) {
-    @return $light-color;
+    @return $main-color;
   } @else {
     @return $light-color;
   }
