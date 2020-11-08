@@ -276,11 +276,11 @@ img {
   #about-b li:nth-child(odd) div:before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #0D2D32 transparent transparent; }
+    border-color: transparent #AFE6AF transparent transparent; }
   #about-b li:nth-child(even) div:before {
     right: -15px;
     border-width: 8px 0 8px 16px;
-    border-color: transparent transparent transparent #0D2D32; }
+    border-color: transparent transparent transparent #AFE6AF; }
   #about-b li.show div {
     visibility: visible;
     opacity: 1;
