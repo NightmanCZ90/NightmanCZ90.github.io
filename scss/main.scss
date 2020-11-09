@@ -89,6 +89,10 @@ img {
         font-size: 4rem;
         line-height: 1.2;
       }
+
+      a {
+        margin-top: 2rem;
+      }
     }
   }
 
@@ -127,7 +131,6 @@ img {
     color: $light-color;
 
     .stack {
-      padding: 0 15rem;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
 
@@ -169,7 +172,7 @@ img {
 
     li {
       list-style: none;
-      margin: 2rem;
+      margin: 1rem;
       text-align: center;
       width: 10rem;
       
@@ -349,7 +352,7 @@ img {
 
       .text-input {
         padding: 0.5rem 1rem;
-        border: 2px solid $main-color;
+        border: 2px solid $light-color;
       }
     }
 
@@ -392,3 +395,6 @@ img {
     justify-content: center;
   }
 }
+
+// Import Media Queries
+@import 'media';

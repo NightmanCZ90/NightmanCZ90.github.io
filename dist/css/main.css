@@ -242,6 +242,8 @@ img {
       color: #bdcba7;
       font-size: 4rem;
       line-height: 1.2; }
+    #header-home .header-content a {
+      margin-top: 2rem; }
 
 #header-inner {
   background: url("../img/na_poli.jpg") no-repeat center 5%/cover;
@@ -264,7 +266,6 @@ img {
   background: #0D2D32;
   color: #AFE6AF; }
   #home-b .stack {
-    padding: 0 15rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr); }
     #home-b .stack li {
@@ -289,7 +290,7 @@ img {
     display: flex; }
   #home-c li {
     list-style: none;
-    margin: 2rem;
+    margin: 1rem;
     text-align: center;
     width: 10rem; }
     #home-c li p {
@@ -404,7 +405,7 @@ img {
     height: 100px; }
   #contact-a .text-fields .text-input {
     padding: 0.5rem 1rem;
-    border: 2px solid #0D2D32; }
+    border: 2px solid #AFE6AF; }
 
 #contact-a button[type='submit'] {
   width: 50%; }
@@ -430,3 +431,97 @@ img {
     display: flex;
     align-items: center;
     justify-content: center; }
+
+@media (max-width: 1300px) {
+  #about-a .about-info .bio-image {
+    object-fit: cover;
+    width: 50%; } }
+
+@media (max-width: 800px) {
+  #main-nav #logo {
+    width: 120px; }
+  #main-nav li {
+    padding: 1rem; }
+  #header-home {
+    height: 30rem; }
+    #header-home .header-content {
+      padding-top: 4rem; }
+      #header-home .header-content h1 {
+        font-size: 3rem; }
+  #home-b .container {
+    padding: 0; }
+  #home-c {
+    margin-top: 1.5rem; }
+    #home-c li {
+      margin: 0.5rem;
+      height: 5rem; }
+      #home-c li p {
+        margin-top: 0;
+        font-size: 1.2rem; }
+      #home-c li a i {
+        font-size: 3rem;
+        margin-bottom: 0; }
+  #about-a .about-info {
+    flex-direction: column; }
+    #about-a .about-info .bio-image {
+      object-fit: cover;
+      width: 100%;
+      margin-bottom: 1rem; } }
+
+@media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center; }
+    #main-nav li {
+      padding: 1rem; }
+  #header-home {
+    height: 10rem;
+    border-bottom: 3px solid #AFE6AF;
+    background-position: center 5%; }
+    #header-home .header-content {
+      display: none; }
+  #header-inner {
+    height: 10rem; }
+  #home-a .specials,
+  #home-b .stack,
+  #home-c .social-list,
+  .items {
+    grid-template-columns: 1fr; }
+  #home-a .specials div {
+    border-bottom: 1px #AFE6AF solid;
+    padding-bottom: 1rem; }
+    #home-a .specials div:last-child {
+      border: none;
+      padding-bottom: 0; }
+  #home-b .stack > div {
+    padding: 2rem 0 1rem 0; }
+  #home-c {
+    margin-top: 1rem; }
+    #home-c .social-list {
+      flex-direction: column; }
+      #home-c .social-list li {
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        grid-gap: 1rem;
+        align-items: center; }
+        #home-c .social-list li a {
+          justify-self: start; }
+        #home-c .social-list li p {
+          justify-self: start;
+          transform: none;
+          opacity: 1;
+          visibility: visible; }
+  #contact-a .text-fields {
+    grid-template-areas: 'name' 'subject' 'email' 'phone' 'message'; }
+  #contact-b {
+    padding: 1rem 0; }
+    #contact-b .contact-info {
+      font-size: 1rem;
+      flex-direction: column;
+      justify-content: space-between; }
+      #contact-b .contact-info div {
+        margin-top: 1rem; }
+  #main-footer {
+    height: 4rem; }
+    #main-footer .container {
+      padding: 0; } }
