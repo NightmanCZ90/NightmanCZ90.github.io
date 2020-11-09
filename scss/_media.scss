@@ -24,6 +24,12 @@
       }
     }
   }
+
+  #contact-c {
+    h1 {
+      font-size: 3rem;
+    }
+  }
 }
 
 // Tablets & Smaller
@@ -116,9 +122,49 @@
     }
   }
 
+  #work {
+    &-a {
+      .items {
+        grid-template-columns: repeat(2, 1fr);
+
+        .item {
+          &-text {
+            &-title,
+            &-description {
+              font-size: 1rem;
+            }
+          }
+
+          // &-code {
+          //   &-1 {
+          //     padding-top: 0.2rem;
+          //     transform: none;
+          //   }
+          //   a:hover {
+          //     .item-code-1 {
+          //       transform: none;
+          //       opacity: 1;
+          //     }
+
+          //     .item-code-2 {
+          //       display: none;
+          //     }
+          //   }
+          // }
+          &-code {
+            &-2 {
+              font-size: 1rem;
+              margin-top: 0.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
   #contact-c {
     h1 {
-      font-size: 3rem;
+      font-size: 2rem;
     }
   }
 }
@@ -224,6 +270,12 @@
       }
     }
   }
+
+  #work-a {
+    .items {
+      grid-template-columns: 1fr;
+    }
+  }
   
   // Contact
   #contact {
@@ -279,6 +331,15 @@
 
     .container {
       padding: 0;
+    }
+  }
+}
+
+// Landscape
+@media(max-height: 580px) {
+  #header-home {
+    .header-content {
+      padding-top: 3rem;
     }
   }
 }

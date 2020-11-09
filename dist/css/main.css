@@ -439,7 +439,9 @@ img {
   #about-b ul li div {
     max-width: 310px; }
   #about-b ul li:nth-child(even) div {
-    left: -374px; } }
+    left: -374px; }
+  #contact-c h1 {
+    font-size: 3rem; } }
 
 @media (max-width: 800px) {
   #main-nav #logo {
@@ -482,8 +484,15 @@ img {
         border-color: transparent #AFE6AF transparent transparent; }
     #about-b ul li.show div {
       transform: none; }
+  #work-a .items {
+    grid-template-columns: repeat(2, 1fr); }
+    #work-a .items .item-text-title, #work-a .items .item-text-description {
+      font-size: 1rem; }
+    #work-a .items .item-code-2 {
+      font-size: 1rem;
+      margin-top: 0.4rem; }
   #contact-c h1 {
-    font-size: 3rem; } }
+    font-size: 2rem; } }
 
 @media (max-width: 500px) {
   #main-nav {
@@ -536,6 +545,8 @@ img {
         font-size: 1rem; }
       #about-b ul li div p {
         font-size: 0.8rem; }
+  #work-a .items {
+    grid-template-columns: 1fr; }
   #contact-a .text-fields {
     grid-template-areas: 'name' 'subject' 'email' 'phone' 'message'; }
   #contact-b {
@@ -556,3 +567,7 @@ img {
     height: 4rem; }
     #main-footer .container {
       padding: 0; } }
+
+@media (max-height: 580px) {
+  #header-home .header-content {
+    padding-top: 3rem; } }
