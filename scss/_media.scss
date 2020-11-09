@@ -73,6 +73,12 @@
       }
     }
   }
+
+  #contact-c {
+    h1 {
+      font-size: 3rem;
+    }
+  }
 }
 
 // Smartphones
@@ -185,6 +191,12 @@
             border-bottom: 1px solid rgba($light-color, 0.15);
           }
         }
+      }
+    }
+
+    &-c {
+      h1 {
+        font-size: 2rem;
       }
     }
   }
