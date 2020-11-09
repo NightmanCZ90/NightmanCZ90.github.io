@@ -435,7 +435,11 @@ img {
 @media (max-width: 1300px) {
   #about-a .about-info .bio-image {
     object-fit: cover;
-    width: 50%; } }
+    width: 50%; }
+  #about-b ul li div {
+    max-width: 310px; }
+  #about-b ul li:nth-child(even) div {
+    left: -374px; } }
 
 @media (max-width: 800px) {
   #main-nav #logo {
@@ -467,6 +471,17 @@ img {
       object-fit: cover;
       width: 100%;
       margin-bottom: 1rem; }
+  #about-b ul li {
+    margin-left: 20%; }
+    #about-b ul li:nth-child(even) div {
+      left: 40px;
+      transform: translateX(200px); }
+      #about-b ul li:nth-child(even) div::before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent #AFE6AF transparent transparent; }
+    #about-b ul li.show div {
+      transform: none; }
   #contact-c h1 {
     font-size: 3rem; } }
 
@@ -513,6 +528,14 @@ img {
           transform: none;
           opacity: 1;
           visibility: visible; }
+  #about-b ul li {
+    margin-left: 1.5rem; }
+    #about-b ul li div {
+      width: 60vw; }
+      #about-b ul li div h3 {
+        font-size: 1rem; }
+      #about-b ul li div p {
+        font-size: 0.8rem; }
   #contact-a .text-fields {
     grid-template-areas: 'name' 'subject' 'email' 'phone' 'message'; }
   #contact-b {
