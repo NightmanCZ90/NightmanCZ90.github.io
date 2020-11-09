@@ -178,6 +178,12 @@
 
         div {
           margin-top: 1rem;
+          width: 80%;
+
+          &:first-child {
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba($light-color, 0.15);
+          }
         }
       }
     }
